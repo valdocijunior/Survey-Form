@@ -1,0 +1,105 @@
+h1, p {
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-weight: 400;
+    line-height: 38px;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+p {
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1.1rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: white;
+    line-height: 25px;
+    padding: 20px;
+    margin: 16px 0 16px 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+}
+
+input, textarea, select {
+    margin: 10px 0 10px 0;
+    width: 100%;
+    min-height: 1.8em;
+}
+
+label {
+    margin: 0 0 8px 0;
+    height: 25px;
+    width: 600px;
+}
+
+#textarea {
+    min-height: 120px;
+    width: 100%;
+    resize: vertical;
+}
+
+#survey-form {
+    border-radius: 5px;
+    background-color: rgba(42, 41, 71, 0.9);
+    padding: 40px;
+    width: 630px;
+    margin: auto;
+}
+
+#checkbox {
+    display: flex;
+}
+
+.text {
+    border: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    padding: auto;
+    border-color: white;
+    background-color: white;
+}
+
+#favorite, #describe {
+    color: rgb(73, 80, 87);
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+#submit {
+    display: block;
+    width: 100%;
+    margin: 8px 0 0 0;
+    padding: 0.75rem;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    background-color: rgb(55, 175, 101);
+    border-color: rgb(55, 175, 101);
+    color: white;
+    cursor: pointer;
+}
+
